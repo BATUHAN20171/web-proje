@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kayseri - Şehri Hakkında</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .city-info {
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #4CAF50;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Carousel içindeki img’leri oranlı alana bozulmadan sığdır */
+        .ratio .carousel-inner img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            background-color: #000;
+            /* isteğe bağlı: boşluklar için koyu zemin */
+        }
+    </style>
+</head>
+
+<body>
+
+ <!-- Navbar Başlangıcı -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">BATUHAN ÖZKAN</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="ana_sayfa.html">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hakkımda.html">Hakkımda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="öz geçmiş.html">öz geçmiş</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="şehrim.html">şehrim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="iletişim.html">İletişim</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar Sonu -->
+
+
+
+
+    <header class="text-center py-4 bg-success text-white">
+        <h1>Kayseri Şehri Hakkında</h1>
+    </header>
+
+    <!-- Slider (Bootstrap Carousel + Ratio) -->
+    <div class="container mt-4">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <!-- 16:9 oranlı container -->
+            <div class="ratio ratio-16x9">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="#kayseri-kalesi">
+                            <img src="resimler/kayseri-kalesi.jpg" class="d-block" alt="Kayseri Kalesi">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="#erciyes">
+                            <img src="resimler/erciyes.jpg" class="d-block" alt="Erciyes Dağı">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="#Hunat-Hatun-Külliyesi">
+                            <img src="resimler/hunat-hatun.jpg" class="d-block" alt="Hunat Hatun Külliyesi">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="#Kapuzbaşı-Şelaleleri">
+                            <img src="resimler/şelale.jpg" class="d-block" alt="Kapuzbaşı Şelaleleri">
+                        </a>
+                    </div>
+                    
+
+                </div>
+            </div>
+            <!-- Kontroller -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Önceki</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Sonraki</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Şehir Bilgileri -->
+    <section class="city-info container text-center">
+        <h2>Kayseri Hakkında</h2>
+        <p><strong>1. Genel Bakış:</strong><br>
+            Kayseri, Türkiye’nin İç Anadolu Bölgesi’nde yer alan köklü bir metropoldür. Konumu, Anadolu’yu Doğu’ya ve
+            Güney’e
+            bağlayan önemli bir kavşak noktasıdır. 2024 verilerine göre nüfusu yaklaşık 1,5 milyon, ekonomi ve eğitimde
+            bölgesel merkez.</p>
+        <p><strong>2. Tarihi ve Mirası:</strong><br>
+            Milattan önceki döneme uzanan tarihiyle; Bizans, Selçuklu ve Osmanlı izlerini taşır. Kültepe Kaniş-Karum
+            Höyüğü
+            çivi yazılı tabletleriyle ünlü, Gevher Nesibe Külliyesi Selçuklu tıp mimarisinin şaheseridir.</p>
+        <p><strong>3. Kültür ve Lezzet:</strong><br>
+            Pastırma, sucuk, üçgen mantı, katmer… Hem damak tadına hem kültüre bayram yaşatan lezzetler. Her sonbahar
+            düzenlenen Pastırma Festivali’ni sakın kaçırma.</p>
+        <p><strong>4. Gezilecek Yerler ve Doğa:</strong><br>
+        <p id="erciyes"><strong>ERCİYES DAĞI</strong></p>
+       Erciyes Dağı, Kayseri’nin yaklaşık 25 km güneyinde yükselen ve 3.917 metrelik zirvesiyle Türkiye’nin en yüksek yanardağlarından biridir. Volkanik yapısı sayesinde eşsiz kaya dokularına sahip olan Erciyes, kış aylarında modern pistleri ve kar kalitesiyle snowboard tutkunlarının “gizli cenneti” konumundadır. Yazınse ise yemyeşil yaylaları ve doğa yürüyüşü rotalarıyla dağ bisikleti ve trekking severlere nefes kesen manzaralar sunar. Zirveye tırmanış, teknik donanım gerektirse de rehberli turlarla amatör dağcılar için de ulaşılabilir. Erciyes Dağı’nda; temiz hava, geniş panoramik seyir terasları ve dört mevsim canlı faaliyet imkânı bir arada <br><br>
+
+        <p id="kayseri-kalesi"><strong>KAYSERİ KALESİ</strong></p>
+        Kayseri Kalesi, şehrin tam merkezinde, M.S. 2. yüzyıldan beri ayakta duran görkemli bir savunma yapısıdır; kesme taşlardan örülmüş surları ve kuleleriyle hem Roma dönemi ihtişamını hem de Selçuklu–Osmanlı dokunuşlarını bir arada hissettirir. Zirvesine çıktığınızda, şehrin tarih kokan sokakları ve modern silüeti ayaklarınızın altında uzanır; bu eşsiz manzara, adeta yüzyılların fısıldadığı hikâyeleri dinlemek için ideal bir dinleme platformu sunar.<br><br>
+
+        <p id="Hunat-Hatun-Külliyesi"><strong>HUNAT HATUN KÜLLİYESİ</strong></p>
+
+        Hunat Hatun Külliyesi, 1238 yılında Sultan II. Gıyaseddin Keyhüsrev’in eşi Mahperi Hatun (Hunat Hatun) adına inşa edilen; cami, medrese, hamam ve imaretten oluşan kapsamlı bir yapıdır. Selçuklu taş işçiliğinin zarafetini yansıtan taş oymaları, kubbeleri ve sütun başlıkları, dönemin sanat anlayışını ve dini gelenekleri bir arada sunar. Külliye içinde vakıf edilirken amaçlanan toplumsal dayanışma ruhu, günümüzde de ziyaretçilerine tarihî atmosfer eşliğinde dingin bir mola imkânı sağlar; özellikle medrese avlusundaki revaklı yürüyüş yolları, şehrin karmaşasından uzaklaşıp geçmişle sessiz bir diyaloğa davet eder. Hunat Hatun Külliyesi, Kayseri’nin kültürel mirasının kalbinde nakış gibi işlenmiş, zaman içinde dimdik ayakta kalan nadide bir şaheserdir.     <br><br>
+
+        <p id="Kapuzbaşı-Şelaleleri"><strong>KAPUZBAŞI ŞELALESİ</strong></p>
+
+        Kapuzbaşı Şelaleleri, Kayseri’nin Yahyalı ilçesi sınırlarında, sarp kayalıklardan dökülen beş ayrı şelale topluluğuyla adeta doğanın gösterisini sunar; en yüksek çağlayan yaklaşık 100 metre yükseklikten serin bir örtü gibi akarken, çevresindeki yemyeşil orman ve kanyonda yankılanan su sesi yürüyüş tutkunlarına huzur dolu anlar vaat eder. Zorlu patikalar ve ahşap köprülerle keşfedilen bu bölge, fotoğraf tutkunları ve doğa severler için her mevsim büyüleyici bir keşif noktasıdır.</p>
+        <p><strong>5. Ekonomi ve Sanayi:</strong><br>
+            Mobilyadan tekstile, gıdadan makine imalatına uzanan KOBİ’lerle dolu “Anadolu Kaplanı” ruhu Kayseri OSB’de
+            hayat buluyor.</p>
+        <p><strong>6. Ulaşım:</strong><br>
+            Kayseri Havalimanı’ndan yurt içi-uluslararası seferler, E90/E88 karayolları, tren garı ve otobüs
+            terminalleri
+            sayesinde her yere kolay erişim.</p>
+
+        <h3>Gezilecek Yerler</h3>
+        <ul class="list-unstyled">
+            <li><a href="#kayseri-kalesi">Kayseri Kalesi</a></li>
+            <li><a href="#erciyes">Erciyes Dağı</a></li>
+            
+            <li><a href="#Hunat Hatun Külliyesi">Hunat Hatun Külliyesi</a></li>
+            <li><a href="#Kapuzbaşı Şelaleleri">Kapuzbaşı Şelaleleri</a></li>
+        </ul>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
