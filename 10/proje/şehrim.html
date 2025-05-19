@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kayseri - Şehri Hakkında</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Harici CSS Dosyası -->
+    <link rel="stylesheet" href="şehrim.css">
+</head>
+
+<body>
+
+     <!-- Navbar Başlangıcı -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">BATUHAN ÖZKAN</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hakkımda.html">Hakkımda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="öz geçmiş.html">öz geçmiş</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="şehrim.html">şehrim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="iletişim.html">İletişim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="giriş_ekranı.html">Giriş</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar Sonu -->
+
+    <header class="text-center py-4 bg-primary text-white">
+        <h1>Kayseri Şehri Hakkında</h1>
+    </header>
+
+    <!-- Slider -->
+    <div class="container mt-4">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="ratio ratio-16x9">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="#kayseri-kalesi"><img src="resimler/kayseri-kalesi.jpg" class="d-block"
+                                alt="Kayseri Kalesi"></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="#erciyes"><img src="resimler/erciyes.jpg" class="d-block" alt="Erciyes Dağı"></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="#Hunat-Hatun-Külliyesi"><img src="resimler/hunat-hatun.jpg" class="d-block"
+                                alt="Hunat Hatun Külliyesi"></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="#Kapuzbaşı-Şelaleleri"><img src="resimler/şelale.jpg" class="d-block"
+                                alt="Kapuzbaşı Şelaleleri"></a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Önceki</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Sonraki</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Şehir Bilgileri -->
+    <section class="city-info container text-center">
+        <h2>Kayseri Hakkında</h2>
+        <p><strong>1. Genel Bakış:</strong><br>Kayseri, Türkiye’nin İç Anadolu Bölgesi’nde yer alan köklü bir
+            metropoldür...</p>
+        <p><strong>2. Tarihi ve Mirası:</strong><br>Milattan önceki döneme uzanan tarihiyle...</p>
+        <p><strong>3. Kültür ve Lezzet:</strong><br>Pastırma, sucuk, üçgen mantı, katmer...</p>
+
+        <p id="erciyes"><strong>ERCİYES DAĞI</strong></p>
+        <p>Erciyes Dağı, Kayseri’nin yaklaşık 25 km güneyinde yükselen...</p>
+
+        <p id="kayseri-kalesi"><strong>KAYSERİ KALESİ</strong></p>
+        <p>Kayseri Kalesi, şehrin tam merkezinde...</p>
+
+        <p id="Hunat-Hatun-Külliyesi"><strong>HUNAT HATUN KÜLLİYESİ</strong></p>
+        <p>Hunat Hatun Külliyesi, 1238 yılında...</p>
+
+        <p id="Kapuzbaşı-Şelaleleri"><strong>KAPUZBAŞI ŞELALESİ</strong></p>
+        <p>Kapuzbaşı Şelaleleri, Kayseri’nin Yahyalı ilçesinde...</p>
+
+        <p><strong>5. Ekonomi ve Sanayi:</strong><br>Mobilyadan tekstile, gıdadan makine imalatına...</p>
+        <p><strong>6. Ulaşım:</strong><br>Kayseri Havalimanı, E90/E88, tren ve otobüs terminalleri...</p>
+
+        <h3>Gezilecek Yerler</h3>
+        <ul class="list-unstyled">
+            <li><a href="#kayseri-kalesi">Kayseri Kalesi</a></li>
+            <li><a href="#erciyes">Erciyes Dağı</a></li>
+            <li><a href="#Hunat-Hatun-Külliyesi">Hunat Hatun Külliyesi</a></li>
+            <li><a href="#Kapuzbaşı-Şelaleleri">Kapuzbaşı Şelaleleri</a></li>
+        </ul>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
