@@ -1,0 +1,72 @@
+/* RESET & TEMEL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #31024e;
+    color: #e0eaff;
+    min-height: 100vh;
+    overflow-x: hidden;
+    padding: 20px;
+}
+
+/* BAŞLIK */
+h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #00e5ff;
+}
+
+/* KART KAPSAYICI */
+#games-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* KARTLAR */
+.game-card {
+    background: #1a1a2e;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 10px #00ffff44;
+    position: relative;
+}
+
+/* KART HOVER */
+.game-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px #00ffff88;
+}
+
+/* RESİM */
+.game-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+/* RESİM HOVER */
+.game-card:hover img {
+    transform: scale(1.05);
+}
+
+/* KART ADI */
+.game-card::after {
+    content: attr(data-name);
+    display: block;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    color: #00ffff;
+    font-size: 1rem;
+}
