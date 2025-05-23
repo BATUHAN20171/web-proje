@@ -1,0 +1,40 @@
+/* Genel stil ayarları */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+
+p {
+    color: aliceblue;
+    font-size: larger;
+    font-weight: bolder;
+    text-align: center;
+}
+
+/* Container ve Card düzeni */
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 50%;
+    background-color: rgb(31, 0, 53);
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Input alanları */
+input {
+    margin-bottom: 1rem;
+}
+
+/* Button stil */
+.btn-outline-warning {
+    margin-top: 50px;
+}

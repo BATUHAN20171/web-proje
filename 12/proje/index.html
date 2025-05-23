@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WEB SİTEM</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="ana_sayfa.css" rel="stylesheet"> <!-- Harici CSS dosyasına bağladım -->
+
+
+
+
+</head>
+
+<body style="background-color: black; color: white;">
+
+
+    <script>
+        // URL'de "error=1" varsa alert göster
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('error') === '1') {
+            alert("hoş geldin b241210061");
+        }
+    </script>
+
+
+
+    <!-- Navbar Başlangıcı -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">BATUHAN ÖZKAN</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hakkımda.html">Hakkımda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="öz geçmiş.html">Öz Geçmiş</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="şehrim.html">Şehrim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="iletişim.html">İletişim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="giriş_ekranı.html">Giriş</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar Sonu -->
+
+    <h1 style="text-align: center; margin-top: 20px;">SAYFAMA HOŞGELDİNİZ</h1>
+
+    <div class="container my-3">
+        <div class="row my-3">
+            <div class="col-sm-12 col-md-4 col-lg-4 " data-aos="slide-right" data-aos-duration="1000">
+                <div class="card">
+                    <img src="resimler/kayseri.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Şehrim</h5>
+                        <a href="şehrim.html" class="btn btn-outline-info">Sayfaya Git</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-4 col-lg-4 ">
+                <div class="card" data-aos="slide-right" data-aos-duration="1000">
+                    <img src="resimler/uçak.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Hakkımda</h5>
+                        <a href="hakkımda.html" class="btn btn-outline-warning">Sayfaya Git</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-4 col-lg-4" data-aos="slide-right" data-aos-duration="1000">
+                <div class="card">
+                    <img src="resimler/öz  geçmiş.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Öz Gecmis</h5>
+                        <a href="öz geçmiş.html" class="btn btn-outline-danger">Sayfaya Git</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row my-3">
+            <div class="col-sm-12 col-md-4 col-lg-4" data-aos="slide-right" data-aos-duration="1000">
+                <div class="card">
+                    <img src="resimler/logo.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Takımımız</h5>
+                        <a href="mirasımız.html" class="btn btn-outline-success">Sayfaya Git</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-4 col-lg-4 " data-aos="slide-right" data-aos-duration="1000">
+                <div class="card">
+                    <img src="resimler/oyun.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">İlgi Alanlarım</h5>
+                        <a href="ilgi_alanlarım.html" class="btn btn-outline-primary">Sayfaya Git</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-4 col-lg-4" data-aos="slide-right" data-aos-duration="1000">
+                <div class="card">
+                    <img src="resimler/iletişim.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">İletişim</h5>
+                        <a href="iletişim.html" class="btn btn-outline-light">Sayfaya Git</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

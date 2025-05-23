@@ -1,0 +1,35 @@
+body {
+            background-color: black;
+            color: white;
+        }
+
+        .card {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            border: 1px solid white;
+            border-radius: 12px;
+            text-align: center;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        /* Üst kısımda, orta hizaya yakın konumlandırma */
+        .centered-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            /* Üst kısımda olacak şekilde */
+            align-items: center;
+            height: 60vh;
+            /* Sayfa yüksekliğinin %60'ı kadar */
+            margin-top: 10vh;
+            /* Üstten 10vh kadar boşluk bırak */
+        }
+
+        /* Radio butonlarını ve etiketlerini yatayda ortalamak için */
+        .form-check {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
